@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.18.1" />
+    <PackageReference Include="Grpc.Tools" Version="2.41.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <Protobuf Include="feast\types\Value.proto" />
+    <Protobuf Include="feast\types\EntityKey.proto" />
+    <Protobuf Include="feast\types\Field.proto" />
+    <Protobuf Include="feast\core\DataFormat.proto" />
+    <Protobuf Include="feast\core\DataSource.proto" />
+    <Protobuf Include="feast\core\Entity.proto" />
+    <Protobuf Include="feast\core\Feature.proto" />
+    <Protobuf Include="feast\core\FeatureService.proto" />
+    <Protobuf Include="feast\core\FeatureTable.proto" />
+    <Protobuf Include="feast\core\FeatureView.proto" />
+    <Protobuf Include="feast\core\FeatureViewProjection.proto" />
+    <Protobuf Include="feast\core\OnDemandFeatureView.proto" />
+    <Protobuf Include="feast\core\Registry.proto" />
+    <Protobuf Include="feast\core\Store.proto" />
+  </ItemGroup>
+
+</Project>
