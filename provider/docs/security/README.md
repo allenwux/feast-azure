@@ -14,6 +14,8 @@ If you want to use an existing virtual network or use Azure-CNI, you need to cre
 - [Create AKS cluster using kubenet](https://docs.microsoft.com/azure/aks/configure-kubenet).
 - [Create AKS cluster using Azure CNI](https://docs.microsoft.com/azure/aks/configure-azure-cni).
 
+To learn more about how to create a virtual network, please see [Quickstart: Create a virutal network](https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
+
 ### Restrict access to Feast Core service using internal load balancer
 By default, the Azure Feast installation will create a standard load balancer and expose the Feast Core service pod to public. If you want to restrict access to your Feast Core service to the same virtual network, you can create a internal load balancer to replace the standard one.
 
