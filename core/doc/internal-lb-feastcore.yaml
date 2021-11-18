@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: internal-feast-core
+    annotations: 
+      service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+spec:
+    type: LoadBalancer
+    ports:
+      - name: port-1
+        protocol: TCP
+        port: 8080
+        targetPort: 8080
+      - name: port-2
+        protocol: TCP
+        port: 6565
+        targetPort: 6565
+    selector:
+        app: feast-core
+        component: core
+        release: feast-release
